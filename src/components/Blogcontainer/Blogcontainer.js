@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 const Blogcontainer = () => {
   const [blogs, setBlogs] = useState([]);
   const [readTime, setReadTime] = useState(0);
@@ -9,7 +9,6 @@ const Blogcontainer = () => {
   const [isTrue, setIsTrue] = useState(false);
   // handler for mark as red
   const handlerMarkAsRead = read => {
-    console.log(readTime);
     const totalReadTime = readTime + read;
     setReadTime(totalReadTime);
   };
