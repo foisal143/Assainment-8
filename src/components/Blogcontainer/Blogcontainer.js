@@ -16,7 +16,7 @@ const Blogcontainer = () => {
   // handler for show book mark data
   const bookMark = (title, istrue) => {
     const allTitles = [...titles, title];
-    if (isTrue) {
+    if (titles.includes(title)) {
       const restTitle = titles.filter(t => t !== title);
       setTitles(restTitle);
       toast('Remove from bookmark');
