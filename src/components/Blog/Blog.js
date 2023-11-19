@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faBookmark } from '@fortawesome/free-solid-svg-icons';
+
 const Blog = ({ blog, handlerMarkAsRead, bookMark, isTrue }) => {
   console.log(blog);
   const { title, registered, redTime, picture, name, id, author_picture } =

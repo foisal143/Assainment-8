@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
-
+import { ToastContainer, toast } from 'react-toastify';
 const Blogcontainer = () => {
   const [blogs, setBlogs] = useState([]);
   const [readTime, setReadTime] = useState(0);
@@ -19,8 +19,10 @@ const Blogcontainer = () => {
     if (isTrue) {
       const restTitle = titles.filter(t => t !== title);
       setTitles(restTitle);
+      toast('Remove from bookmark');
     } else {
       setTitles(allTitles);
+      toast('Addet to bookmark');
     }
     setIsTrue(istrue);
   };
