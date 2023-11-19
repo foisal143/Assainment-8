@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Blogcontainer from './components/Blogcontainer/Blogcontainer';
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar></Navbar>
       <Blogcontainer></Blogcontainer>
     </div>
